@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezervácia</title>
+    <script src="https://unpkg.com/lodash@4.17.20"></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="../scss/all.css">
+    <link rel="stylesheet" href="../scss/fonts.css">
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../source/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../source/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../source/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../source/favicon/site.webmanifest">
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+</head>
+<body>
+<header class="header--outer home" id="js-header-outer">
+    <div class="header--container">
+        <div class="header-row">
+            <div class="header--logo">
+                <a class="header--logo-link" href="home.html"><img src="../source/brand/logo-gorov.svg"
+                                                                   class="header--logo-image"
+                                                                   alt="Gorov Hotel Logo">
+                </a>
+            </div>
+            <div class="header--main-menu">
+                <ul class="header--main-menu--items">
+                    <li class="header--main-menu--item "><a href="../html/home.html">Hlavná</a></li>
+                    <li class="header--main-menu--item"><a class="item-active" href="../html/reservation.html">Rezervácia</a>
+                    </li>
+                    <li class="header--main-menu--item"><a href="../html/about.html">O hoteli</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="checkout--container">
+    <div class="article--content--outer">
+        <div class="carousel-information">
+
+            <h3 class="carousel-title">Vaša rezervácia</h3>
+        </div>
+    </div>
+    <div class="checkout">
+        <div class="checkout--main">
+            <div class="checkout--main-description dates">
+                <div class="reservation-date">
+                    <div class="reservation-date-text">príchod</div>
+                    <div class="reservation-date-day">Štv, 17. Novembra 2022</div>
+                </div>
+                <div class="reservation-date">
+                    <div class="reservation-date-text">odchod</div>
+                    <div class="reservation-date-day">Ut, 26. Novembra 2022</div>
+                </div>
+                <div class="reservation-date">
+                    <div class="reservation-date-text">ludi</div>
+                    <div class="reservation-date-day">2</div>
+                </div>
+            </div>
+            <div class="checkout--main-description">
+                <h4 class="carousel-text">Čas vášho príchodu</h4>
+                <ul class="checkout--main-description-list">
+                    <li>Vaša izba bude pripravená na check-in medzi 12:00 a 24:00</li>
+                    <li>Recepcia s nepretržitou prevádzkou – asistencia vždy, keď ju potrebujete!</li>
+                </ul>
+            </div>
+            <div class="checkout--main-description">
+                <h4 class="carousel-text">Prehľad ceny</h4>
+                <div class="checkout--main-description-price">
+                    <div class="checkout--main-description-price--item">
+                        <span class="price-item">Celková dĺžka pobytu</span>
+                        <span class="price-eur">4 noci</span>
+                    </div>
+                    <div class="checkout--main-description-price--item">
+                        <span class="price-item">Izba Gorov</span>
+                        <span class="price-eur">€ 2 226</span>
+                    </div>
+                    <div class="checkout--main-description-price--item">
+                        <span class="price-item">10 % DPH</span>
+                        <span class="price-eur">€ 226</span>
+                    </div>
+                    <div class="checkout--main-description-price--item">
+                        <span class="price-item">Mestská daň</span>
+                        <span class="price-eur">€ 44</span>
+                    </div>
+                    <div class="checkout--main-description-price--item">
+                        <span class="price-item-big ">Cena</span>
+                        <span class="price-eur-big ">€ 2 496,00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout--main-description">
+
+                <h4 class="carousel-text">Informácie o dodaní</h4>
+                <main class="">
+                    <form method="post" data-commerce-order="81d5e9f187bc8b635cb5e291709e3846" id="op-checkout-form">
+                        <input type="hidden" name="formid" value="order">
+                        <div class="checkout--form-grp" id="shipping-info">
+                            <fieldset>
+                                <div class="form-field">
+                                    <input type="text" class="form-field-input text-field" id="co-name"
+                                           data-validate="required name" name="name" value="">
+                                    <label class="form-field-label" for="co-name">Meno a priezvisko</label>
+                                </div>
+                                <div class="form-field">
+                                    <input type="email" class="form-field-input text-field" name="email" id="co-email"
+                                           data-validate="required email" value="">
+                                    <label class="form-field-label" for="co-email">Email</label>
+                                </div>
+                                <div class="form-field">
+                                    <input type="tel" class="form-field-input text-field" id="co-phone"
+                                           data-validate="required phone" name="phone" value="">
+                                    <label class="form-field-label" for="co-phone">Telefón</label>
+                                </div>
+                                <div class="form-field">
+                                    <textarea class="form-field-text text-field" id="co-comment" name="comment" value=""
+                                              rows="5"></textarea>
+                                    <label class="form-field-label" for="co-comment">Poznámka</label>
+                                </div>
+                                <div class="form-field form-checkbox">
+                                    <input class="form-checkbox-input" type="checkbox" id="co-add-addr" name="add-addr">
+                                    <label for="co-add-addr">Súhlasím so spracovaním osobných údajov pre marketingové
+                                        účely </label>
+                                </div>
+
+                            </fieldset>
+                            <a href="payment.html">
+                                <button class="checkout--action-button accent" id="go-to-pnd" type="button">Pokračovať v
+                                    platbe
+                                </button>
+                            </a>
+
+                        </div>
+                    </form>
+                </main>
+            </div>
+        </div>
+        <div class="checkout--sidebar">
+            <div class="checkout--sidebar-image">
+                <img style="max-width: 100%; height: auto;" src="../source/img/interior1.webp"
+                     alt="KRAVE-Makeup-Re-Wined-Transforming-Jelly-Oil-Cleanser-100ml_01"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer--outer">
+    <div class="footer-top--wrapper">
+        <div class="footer--logo-grp footer--column">
+            <a class="footer--logo-link" href="./home.html">
+                <img src="../source/brand/logo-gorov.svg" class="footer--logo-image" loading="lazy" width="220"
+                     height="55" alt="BeautyHolic logo">
+            </a>
+            <ul class="footer--menu--items">
+                <li class="footer--menu--item-rights">
+                    <a class="footer--menu--link">
+                        GorovHotel© 2022 All rights reserved ♆
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer--menu footer--column">
+            <h4 class="footer--menu--title">Menu</h4>
+            <ul class="footer--menu--items">
+                <li class="footer--menu--item">
+                    <a class="footer--menu--link" href="./home.html">
+                        Hlavná
+                    </a>
+                </li>
+                <li class="footer--menu--item">
+                    <a class="footer--menu--link" href="./reservation.html">
+                        Rezervácia
+                    </a>
+                </li>
+                <li class="footer--menu--item">
+                    <a class="footer--menu--link" href="./about.html">
+                        O nás
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer--menu footer--column">
+            <h4 class="footer--menu--title">Kontakty</h4>
+            <ul class="footer--menu--items">
+                <li class="footer--menu--item">
+                    <a class="footer--menu--link" href="tel:+421951587076">
+                        +421 951 587 076
+                    </a>
+                </li>
+                <li class="footer--menu--item">
+                    <a class="footer--menu--link" href="mailto:info@gorovhotel.com">
+                        info@gorovhotel.com
+                    </a>
+                </li>
+                <li class="footer--menu--item">
+                    <a class="footer--menu--link">
+                        Bratislava, Slovensko
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer--menu footer--column">
+            <h4 class="footer--menu--title">Sledujte nás na</h4>
+            <ul class="footer--social-links--list">
+                <li class="footer--social-item">
+                    <a class="footer--social-link" href="https://www.facebook.com/Beautyholic-104003001776940/"
+                       target="_blank" title="odkaz na facebook" rel="noopener">
+                        <img src="../source/icons/facebook.svg" alt="" class="">
+                    </a>
+                </li>
+                <li class="footer--social-item">
+                    <a class="footer--social-link" href="https://www.instagram.com/beautyholic.sk/" target="_blank"
+                       title="odkaz na instagram" rel="noopener">
+                        <img src="../source/icons/instagram.svg" alt="" class="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<script src="../js/index.js"></script>
+<script src="../js/carousel.js"></script>
+<script src="../js/header-scroll.js"></script>
+
+</body>
+</html>

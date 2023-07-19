@@ -1,0 +1,16 @@
+{
+  "name": "GorovHotel",
+  "version": "1.0.0",
+  "description": "GorovHotel.sk v0.1a",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Mykyta Kolmohrov",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0"
+  }
+}

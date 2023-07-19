@@ -1,0 +1,46 @@
+/* Webfont: MacPawFixelText-Regular */
+@font-face {
+    font-family: 'FixelRegular';
+    src: url('/fonts/Fixel/MacPawFixelText/Web-PS/MacPawFixelText-Regular.woff2') format('woff2'), /* Modern Browsers */ url('/fonts/Fixel/MacPawFixelText/Web-PS/MacPawFixelText-Regular.otf') format('opentype'); /* Safari, Android, iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: MacPawFixelText-Medium */
+@font-face {
+    font-family: 'FixelMedium';
+    src: url('/fonts/Fixel/MacPawFixelText/Web-PS/MacPawFixelText-Medium.woff2') format('woff2'), /* Modern Browsers */ url('/fonts/Fixel/MacPawFixelText/Web-PS/MacPawFixelText-Medium.otf') format('opentype'); /* Safari, Android, iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: MacPawFixelText-SemiBold */
+@font-face {
+    font-family: 'FixelSemiBold';
+    src: url('/fonts/Fixel/MacPawFixelText/Web-PS/MacPawFixelText-SemiBold.woff2') format('woff2'), /* Modern Browsers */ url('/fonts/Fixel/MacPawFixelText/Web-PS/MacPawFixelText-SemiBold.otf') format('opentype'); /* Safari, Android, iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: MacPawFixelText-Bold */
+@font-face {
+    font-family: 'FixelBold';
+    src: url('/fonts/Fixel/MacPawFixelText/Web-PS/MacPawFixelText-Bold.woff2') format('woff2'), /* Modern Browsers */ url('/fonts/Fixel/MacPawFixelText/Web-PS/MacPawFixelText-Bold.otf') format('opentype'); /* Safari, Android, iOS */
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: MacPawFixelText-Black */
+@font-face {
+    font-family: 'FixelBlack';
+    src: url('/fonts/Fixel/MacPawFixelText/Web-PS/MacPawFixelText-Black.woff2') format('woff2'), /* Modern Browsers */ url('/fonts/Fixel/MacPawFixelText/Web-PS/MacPawFixelText-Black.otf') format('opentype'); /* Safari, Android, iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gorov Hotel</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="../scss/all.css">
+    <link rel="stylesheet" href="../scss/fonts.css">
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../source/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../source/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../source/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../source/favicon/site.webmanifest">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+
+</head>
+<body>
+<header class="header--outer">
+    <div class="header--container">
+        <div class="header-row">
+            <div class="header--logo"><span class="header--logo-link"><img src="../source/brand/logo-gorov.svg"
+                                                                           class="header--logo-image"
+                                                                           alt="Gorov Hotel Logo"></span></div>
+            <div class="header--main-menu">
+                <ul class="header--main-menu--items">
+                    <li class="header--main-menu--item "><a class="item-active" href="../html/home.html">Hlavná</a></li>
+                    <li class="header--main-menu--item"><a href="../html/reservation.html">Rezervácia</a></li>
+                    <li class="header--main-menu--item"><a href="../html/about.html">O nás</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="home-screen">
+    <div class="home-screen--inner">
+        <div class="home-screen--text">
+            <h2 class="home-screen--title">Začnite svoju nezabudnuteľnú <br> cestu s nami.</h2>
+
+            <div class="home-screen--reservation">
+                <div class="home-screen--booking">
+
+                    <div class="reservation-date reservation-date-home">
+                        <div class="reservation-date-container">
+                            <div class="reservation-date-text">príchod</div>
+                            <div class="reservation-date-day">Štv, 17. Novembra 2022</div>
+                        </div>
+                        <div class="reservation-date-arrow"><img src="../source/icons/checkin.svg" alt=""></div>
+
+                    </div>
+                    <div class="reservation-date reservation-date-home">
+                        <div class="reservation-date-container">
+                            <div class="reservation-date-text">odchod</div>
+                            <div class="reservation-date-day">Ut, 26. Novembra 2022</div>
+                        </div>
+                        <div class="reservation-date-arrow"><img src="../source/icons/checkin.svg" alt=""></div>
+                    </div>
+                    <div class="reservation-date reservation-date-home">
+                        <div class="reservation-date-container">
+
+                            <div class="reservation-date-text">ludi</div>
+                            <div class="reservation-date-day">2</div>
+                        </div>
+                        <div class="reservation-date-arrow"><img src="../source/icons/checkin.svg" alt=""></div>
+
+                    </div>
+                    <div class="booking-button">
+                        <a href="">
+                            <button class="book-now">BOOK NOW <span><img src="../source/icons/arrow-book.svg"
+                                                                         alt=""></span></button>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="carousel">
+    <div class="carousel-information">
+        <h3 class="carousel-title">Naše apartmány</h3>
+        <h4 class="carousel-text">Záleží nám na našich zákazníkoch a snažíme sa zlepšovať</h4>
+    </div>
+    <div class="carousel-container">
+        <div class="image--container fade">
+            <img src="../source/img/interior2.png" style="width: 100%;" alt="">
+        </div>
+
+        <div class="image--container fade">
+            <img src="../source/img/interior7.webp" style="width: 100%;" alt="">
+        </div>
+
+        <div class="image--container fade">
+            <img src="../source/img/interior6.webp" style="width: 100%;" alt="">
+        </div>
+        <div class="image--container fade">
+            <img src="../source/img/interior4.webp" style="width: 100%;" alt="">
+        </div>
+        <div class="dots-items" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="reviews">
+    <div class="carousel-information">
+        <h3 class="carousel-title">Skúsenosti cestovateľov</h3>
+        <h4 class="carousel-text">Tu je niekoľko úžasných spätných väzieb od našich cestujúcich</h4>
+    </div>
+    <div class="reviews-items">
+        <div class="reviews-items-person">
+            <div class="person-img"><img src="../source/img/avatar.png" alt=""></div>
+            <div class="person-text">Musím vám však vysvetliť, ako sa zrodila celá táto mylná myšlienka odsudzovania
+                rozkoše a chválenia bolesti, a podám vám úplný opis systému a vyložím skutočné učenie veľkého objaviteľa
+                pravdy, majstra staviteľa ľudského šťastia.
+            </div>
+            <div class="person-rating">
+                <div class="rating-active"></div>
+            </div>
+            <div class="person-name">John Doe</div>
+            <div class="person-work">Účtovník</div>
+        </div>
+        <div class="reviews-items-person">
+            <div class="person-img"><img src="../source/img/avatar.png" alt=""></div>
+            <div class="person-text">Musím vám však vysvetliť, ako sa zrodila celá táto mylná myšlienka odsudzovania
+                rozkoše a chválenia bolesti, a podám vám úplný opis systému a vyložím skutočné učenie veľkého objaviteľa
+                pravdy, majstra staviteľa ľudského šťastia.
+            </div>
+            <div class="person-rating">
+                <div class="rating-active"></div>
+            </div>
+            <div class="person-name">John Doe</div>
+            <div class="person-work">Účtovník</div>
+        </div>
+        <div class="reviews-items-person">
+            <div class="person-img"><img src="../source/img/avatar.png" alt=""></div>
+            <div class="person-text">Musím vám však vysvetliť, ako sa zrodila celá táto mylná myšlienka odsudzovania
+                rozkoše a chválenia bolesti, a podám vám úplný opis systému a vyložím skutočné učenie veľkého objaviteľa
+                pravdy, majstra staviteľa ľudského šťastia.
+            </div>
+            <div class="person-rating">
+                <div class="rating-active"></div>
+            </div>
+            <div class="person-name">John Doe</div>
+            <div class="person-work">Účtovník</div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="footer--outer">
+    <div class="footer-top--wrapper">
+        <div class="footer--logo-grp footer--column">
+            <a class="footer--logo-link" href="./home.html">
+                <img src="../source/brand/logo-gorov.svg" class="footer--logo-image" loading="lazy" width="220"
+                     height="55" alt="Gorov Hotel logo">
+            </a>
+            <ul class="footer--menu--items">
+                <li class="footer--menu--item-rights">
+                    <a class="footer--menu--link">
+                        GorovHotel© 2022 All rights reserved ♆
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer--menu footer--column">
+            <h4 class="footer--menu--title">Menu</h4>
+            <ul class="footer--menu--items">
+                <li class="footer--menu--item">
+                    <a class="footer--menu--link" href="./home.html">
+                        Hlavná
+                    </a>
+                </li>
+                <li class="footer--menu--item">
+                    <a class="footer--menu--link" href="./reservation.html">
+                        Rezervácia
+                    </a>
+                </li>
+                <li class="footer--menu--item">
+                    <a class="footer--menu--link" href="./about.html">
+                        O nás
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer--menu footer--column">
+            <h4 class="footer--menu--title">Kontakty</h4>
+            <ul class="footer--menu--items">
+                <li class="footer--menu--item">
+                    <a class="footer--menu--link" href="tel:+421951587076">
+                        +421 951 587 076
+                    </a>
+                </li>
+                <li class="footer--menu--item">
+                    <a class="footer--menu--link" href="mailto:info@gorovhotel.com">
+                        info@gorovhotel.com
+                    </a>
+                </li>
+                <li class="footer--menu--item">
+                    <a class="footer--menu--link">
+                        Bratislava, Slovensko
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer--menu footer--column">
+            <h4 class="footer--menu--title">Sledujte nás na</h4>
+            <ul class="footer--social-links--list">
+                <li class="footer--social-item">
+                    <a class="footer--social-link" href="https://www.facebook.com/Beautyholic-104003001776940/"
+                       target="_blank" title="odkaz na facebook" rel="noopener">
+                        <img src="../source/icons/facebook.svg" alt="" class="">
+                    </a>
+                </li>
+                <li class="footer--social-item">
+                    <a class="footer--social-link" href="https://www.instagram.com/beautyholic.sk/" target="_blank"
+                       title="odkaz na instagram" rel="noopener">
+                        <img src="../source/icons/instagram.svg" alt="" class="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="../js/carousel.js"></script>
+<script src="../js/header-scroll.js"></script>
+
+
+</body>
+</html>
